@@ -1,13 +1,11 @@
 num=0
-def adding_values():
+def adding_values(num):
     while True:
         number=int(input("Number: "))
         if number==0:
-            print("The total is",add)
+            print("The total is",num)
             break
-        if number>=0:
-            add=number+num
-            num=num+add
-            print(f"The total so far is ,{add}")
+        num=number+num
+        print(f"The total so far is ,{num}")
 
-adding_values()
+adding_values(num)
