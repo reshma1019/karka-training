@@ -1,4 +1,4 @@
-sales_tax=0.0825
+sales_tax=8.25
 shipping_cost=5.00
 your_cart=0
 shipping_cost_per_keychain=1.00
@@ -27,7 +27,7 @@ def check_out(sales_tax,shipping_cost,your_cart,shipping_cost_per_keychain):
     name=input("What is your name? ")
     subtotal=your_cart*10
     shipping_charges=shipping_cost+(your_cart*shipping_cost_per_keychain)
-    tax=subtotal*sales_tax
+    tax=(subtotal*sales_tax)/100
     total_cost=subtotal+shipping_charges+tax
     return(f"You have {your_cart} keychains\nKeychains cost is 10 each.\nShipping charges {shipping_charges}.\nSub total{subtotal}\nTax{tax}\nTotal cost ${total_cost}\nThanks for your order,{name}")
     
