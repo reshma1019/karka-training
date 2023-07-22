@@ -38,13 +38,21 @@ def calculate_electricity_bill(consumer_data):
     
 
     
-    # s=str(output)
-    # print(type(s))
+    s=str(output)
+    print(s)
+    file_name="/home/reshma/resh.txt"
+    with open(file_name,"w")as file:
+        file.write(s)
+
+
     text=""
     for data in output:
-        text=text+f"Month:{data['Month']},Unit_consumed:{data['unit_consumed']},Bill amount:{data['bill_amount']}\n"
+        text=text+f"Month:{data['Month']},\nUnit_consumed:{data['unit_consumed']},\nBill amount:{data['bill_amount']}\n\n"
         file_name="/home/reshma/resh.txt"
         with open(file_name,"w")as file:
             file.write(text)
+        
+    
+
 
 calculate_electricity_bill(consumer_data)
