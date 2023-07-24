@@ -1,10 +1,11 @@
 #intrest calculation
-def calc_intrest(p,n,r):
-    intrest=p*n*r/100
-    return intrest
 p=1000
 n=10
 r=5
+def calc_intrest(p,n,r):
+    intrest=p*n*r/100
+    return intrest
+
 intrest=calc_intrest(p,n,r)
 print(intrest)
 

@@ -37,20 +37,30 @@ def calculate_electricity_bill(consumer_data):
     print("total amount:",total)
     
 
-    
+    import json
     s=str(output)
-    print(s)
-    file_name="/home/reshma/resh.txt"
-    with open(file_name,"w")as file:
-        file.write(s)
+    qn=input("did you need json or dict ?")
+    """if qn=="JSON" or "json" or "Json":
+        output_json=json.dumps(s)
+        print(type(output_json))"""
+    elif qn=="dict":
+        # output_json=json.dumps(s)
+        output_new=json.loads(output_json)
+        print(output_new)
+
+    # print(s)
+
+    # file_name="/home/reshma/resh.txt"
+    # with open(file_name,"w")as file:
+    #     file.write(s)
 
 
-    text=""
-    for data in output:
-        text=text+f"Month:{data['Month']},\nUnit_consumed:{data['unit_consumed']},\nBill amount:{data['bill_amount']}\n\n"
-        file_name="/home/reshma/resh.txt"
-        with open(file_name,"w")as file:
-            file.write(text)
+    # text=""
+    # for data in output:
+    #     text=text+f"Month:{data['Month']},\nUnit_consumed:{data['unit_consumed']},\nBill amount:{data['bill_amount']}\n\n"
+    #     file_name="/home/reshma/resh.txt"
+    #     with open(file_name,"w")as file:
+    #         file.write(text)
         
     
 

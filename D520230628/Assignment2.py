@@ -69,12 +69,12 @@ print("Percentage is:",percentage)
 
 
 #homework
-a=("*22 *20 *18*")
-print(a)
-print(a)
-a=a.replace("22","23").replace("18","17")
-print(a)
-print(a)
+# a=("*22 *20 *18*")
+# print(a)
+# print(a)
+# a=a.replace("22","23").replace("18","17")
+# print(a)
+# print(a)
 
 #homework
 a=20
