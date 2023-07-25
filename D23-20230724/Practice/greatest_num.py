@@ -41,6 +41,15 @@ elif third_num>first_num:
 # if third_num>fourth_num:
 #      fourth_num=third_num
 # print(f"{fourth_num}")
+
+
+x =int(input("enter a value:"))
+y =int(input("enter a value:"))
+z =int(input("enter a value:"))
+maxi=max(x,y,z)
+
+print(maxi)
+
      
 
 

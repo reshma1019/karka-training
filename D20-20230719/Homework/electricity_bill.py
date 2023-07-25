@@ -1,4 +1,4 @@
-consumer_data={"consumer_name":"Reshma",
+"""consumer_data={"consumer_name":"Reshma",
                "eb_reading":[1100,1200,1350,1650,2050,2567,2768,3124,3345,3689,4567,5423]}
 def calculate_electricity_bill(consumer_data):
   # print(len("eb_reading"))
@@ -52,4 +52,4 @@ def calculate_electricity_bill(consumer_data):
   print("dictionary_view:",dict)
 
  
-calculate_electricity_bill(consumer_data)
+calculate_electricity_bill(consumer_data)"""

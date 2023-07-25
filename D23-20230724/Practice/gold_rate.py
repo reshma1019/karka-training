@@ -19,9 +19,15 @@ for gold in monthly_gold_rate:
         min=gold["gold_rate"]
         min_month=gold["month"]
 
-print(f"Maximun gold rate:{max},\tMonth='{max_month}'.")
-print(f"Minimum gold rate:{min},\tMonth='{min_month}'.")
+dict={"Maximum Gold Rate":max,
+      "Maximum month" :max_month,
+      "Minimum Gold Rate":min,
+      "Minimum Month":min_month}
+print(dict)
 
+
+# print(f"Maximun gold rate:{max},\tMonth='{max_month}'.")
+# print(f"Minimum gold rate:{min},\tMonth='{min_month}'.")
 
 
 
