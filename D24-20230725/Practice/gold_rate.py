@@ -32,19 +32,29 @@ monthly_gold_rate=[{"month":"January",
                                   {"name":"Earings",
                                     "making_cost":10},
                                   {"name":"Ring",
+                                  
                                     "making_cost":15}]
                     }]
+# shows the output in alphabet order
+# from pprint import pprint
+# pprint(monthly_gold_rate)
+
+# shows the normal output but as per the keys
+# from pprint import pp
+# pp(monthly_gold_rate)
 
 
-for gold in monthly_gold_rate:
-    gold_rate=gold["gold_rate"]
-    jewel_list=gold["jewel_list"]
-    month=gold["month"]
-    for i in gold["jewel_list"]:
-      jewel_name=i["name"]
-      percentage=gold["gold_rate"]*i["making_cost"]/100
-      total_cost=percentage+gold_rate
-      print(f"Month:{month}\nGold Rate:{gold_rate}\n{jewel_name} Rate:{total_cost}\n")
+
+
+# for gold in monthly_gold_rate:
+#     gold_rate=gold["gold_rate"]
+#     jewel_list=gold["jewel_list"]
+#     month=gold["month"]
+#     for i in gold["jewel_list"]:
+#       jewel_name=i["name"]
+#       percentage=gold["gold_rate"]*i["making_cost"]/100
+#       total_cost=percentage+gold_rate
+#       print(f"Month:{month}\nGold Rate:{gold_rate}\n{jewel_name} Rate:{total_cost}\n")
 
 
     
